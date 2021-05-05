@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import callYoutube from './components/APIs/callYoutube';
-import { SearchBar } from './components/index'
+import { SearchBar, VideoList } from './components/index'
 
 const  App = () => {
   const [snippet1, setSnippet1] = useState({ videos: [], selectedVideo: null });
@@ -20,6 +20,7 @@ const  App = () => {
       <h1>React Youtube</h1>
       <h2>App component</h2>
       <SearchBar handleSubmit={handleSubmit} />
+      <VideoList videos={snippet1.videos} />
     </div>
   );
 }
