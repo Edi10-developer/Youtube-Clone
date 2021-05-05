@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import axios from 'axios';
 import callYoutube from './components/APIs/callYoutube';
+import { SearchBar } from './components/index'
 
 const  App = () => {
   const [snippet1, setSnippet1] = useState({ videos: [], selectedVideo: null });
 
-   handleSubmit = async (termsOfsearch) => {
+  const handleSubmit = async (termsOfsearch) => {
     const response = await callYoutube.get('/search', {
       params: {
         q: termsOfsearch
@@ -19,6 +19,7 @@ const  App = () => {
     <div className="App">
       <h1>React Youtube</h1>
       <h2>App component</h2>
+      <SearchBar handleSubmit={handleSubmit} />
     </div>
   );
 }
