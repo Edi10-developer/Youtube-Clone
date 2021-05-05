@@ -10,11 +10,12 @@ const SearchBar = ({ handleSubmit }) => {
         value={termsOfsearch}
         onChange={event => {
             setTermsOfsearch(event.target.value)
-            //handleSubmit(termsOfsearch)
+            handleSubmit(termsOfsearch)
         }}
         className='input-field'
+        alt="Img"
       />
-      <button onClick={handleSubmit(termsOfsearch)}>Search</button>
+      {/*<button onClick={handleSubmit(termsOfsearch)}>Search</button> */}
     </SearchDiv>
   );
 };

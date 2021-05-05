@@ -1,5 +1,6 @@
 import React from 'react';
 import { VideoListDiv } from './styles';
+import { VideoItem } from '../index'
 
 const VideoList = ({ videos, handleVideoSelect }) => {
 
@@ -15,7 +16,7 @@ const VideoList = ({ videos, handleVideoSelect }) => {
 
     return(
     <VideoListDiv> 
-    {renderedVideos} 
+        <ul>{renderedVideos}</ul> 
     </VideoListDiv>
     )
 }

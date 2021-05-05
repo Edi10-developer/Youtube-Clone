@@ -12,6 +12,7 @@ const  App = () => {
         q: termsOfsearch
       }
     })
+    console.log(response.data)
     setSnippet1({ videos: response.data.items, selectedVideo: response.data.item[0] })//, selectedVideo: response.data.item[0] })
   }
 
