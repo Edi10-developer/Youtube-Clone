@@ -1,11 +1,22 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin:0 2rem;
+  border: 1px solid red;
+  padding: 1rem;
+  text-align: left;
 }
 
 .App-logo {
   min-height: 40vmin;
   pointer-events: none;
 }
+
+ul li{
+  list-style-type: none;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

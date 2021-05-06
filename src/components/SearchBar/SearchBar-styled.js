@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const SearchDiv = styled.div`
-    padding: 3.4rem;
+    padding: .7rem;
+    margin-bottom: 1.5rem;  
     display: flex;
+    border: 1px solid #ccc;
 
     .input-field{
         flex-grow: 7;
@@ -12,6 +14,7 @@ const SearchDiv = styled.div`
         font-size: 16px;
         font-weight: 600;
         color: rgba(0, 0, 0, .7);
+        border-radius: 3px;
     }
 
     button{

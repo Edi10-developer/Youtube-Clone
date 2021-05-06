@@ -11,7 +11,8 @@ const SearchBar = props => {
                 placeholder="Write something..."
                 className="input-field"
                 onInput={e => setTermsOfSearch(e.target.value)}
-                onChange={e => setTermsOfSearch(e.target.value)}
+                onChange={props.onChange}
+                //onChange={e => setTermsOfSearch(e.target.value)}
             />
             <button onClick={props.onClick}>Search</button>
         </SearchDiv>
