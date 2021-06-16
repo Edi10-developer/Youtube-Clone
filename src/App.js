@@ -28,13 +28,9 @@ const App = () => {
 
   const handleChange = event => {
     setTermsOfSearch(event.target.value);
-    console.log(termsOfSearch.toString()
-
-    )
   };
 
   //const handleVideoSelect = () => { selectedVideo =>  setSnippet1({ selectedVideo })}
-
 
   return (
     <div className="App">
@@ -48,13 +44,11 @@ const App = () => {
           <Route path="/liked-videos" component={LikedVideos} />
       </Router>
       </div>
-
-      <SideMenu />
       <div className="content">
-        <VideoList videos={snippet1.videos} handleVideoSelect={selectedVideo => setSnippet1({ selectedVideo })} />
         <VideoDetails video={snippet1.selectedVideo} />
+        <VideoList videos={snippet1.videos} handleVideoSelect={selectedVideo => setSnippet1({ selectedVideo })} />
       </div>
-    
+      <SideMenu />
     </div>
   );
 }

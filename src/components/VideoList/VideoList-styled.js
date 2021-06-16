@@ -6,6 +6,7 @@ const VideoListDiv = styled.div`
       padding: 0.6rem;
       padding-top: 0 ;
       width: 32%;
+      margin-top: -57%;
      `;
 
 export { VideoListDiv };
